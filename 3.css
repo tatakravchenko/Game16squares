@@ -1,0 +1,55 @@
+html {
+  width: 100%;
+}
+
+body {
+  width: 70%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  text-align: left;
+  vertical-align: baseline;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+div.col-md-2{
+  width: 100px;
+  height: 250px;
+  text-align: center;
+  padding-top: 15px;
+  border: 1px solid black;
+}
+
+#gameArea{
+   border: 2px solid black;
+   width: 450px;
+   height: 500x;
+   padding-top:25px;
+   padding-left:25px;
+   padding-right:25px;
+   padding-bottom: 75px;
+
+}
+td{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  padding-top: 15px;
+  border: 1px solid black;
+  background: white;
+
+}
+button{
+  border-top:25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+ 
+

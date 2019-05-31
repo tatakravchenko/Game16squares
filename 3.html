@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="3.css">
+  <title>3-е задание</title>
+  
+</head>
+<body>
+  <br>
+  <div class="container">
+    <!-- Рисуем поле 4х4 -->
+    <div id="gameArea">
+      <table>
+       
+        <tr>
+          <td id="A1"></td>
+          <td id="A2"></td>
+          <td id="A3"></td>
+          <td id="A4"></td>
+        </tr>
+        
+        <tr>
+          <td id="B1"></td>
+          <td id="B2"></td>
+          <td id="B3"></td>
+          <td id="B4"></td>
+        </tr>
+        <tr>
+          <td id="C1"></td>
+          <td id="C2"></td>
+          <td id="C3"></td>
+          <td id="C4"></td>
+        </tr>
+        <tr>
+          <td id="D1"></td>
+          <td id="D2"></td>
+          <td id="D3"></td>
+          <td id="D4"></td>
+        </tr>
+        
+      </table>
+
+      <!-- Включаем секундомер -->
+
+      <button class="btn btn-info" onclick = "start()">Старт!</button>
+      <form name=TestForm>   
+
+        <!-- Отображение текущего значения времени -->
+        <input name=stopwatch size=10 value="00:00:00.00" id="input1">  
+      </form>
+
+    </div>
+
+    <div class="modal fade" id="results" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Поздравляем!!! Вы выиграли!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Ваш результат: 
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal"> OK </button>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+
+  </div>
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- BS JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="script3z.js" type="text/javascript"></script>
+
+</body>
+</html>
