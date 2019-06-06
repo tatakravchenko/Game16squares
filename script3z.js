@@ -74,32 +74,36 @@ for (var i = 0; i < divs.length; i++)
 function myFunction() {
     function clear() {
         isBlock=0;
+        console.log('clear')
       document.getElementById(id1).style.background="white";
       document.getElementById(idDiv).style.background="white";
       id1=0;
-      console.log('9999999')
-
   }
 
   idDiv = this.id;
   let col = arrColors2[indexes.indexOf(idDiv)];
   console.log('id1=',id1)
   if (id1==0) {
+    if (document.getElementById(idDiv).style.background==""||document.getElementById(idDiv).style.background=="white" )// цвет белый
+    {
     id1=idDiv; colo=col;
     document.getElementById(idDiv).style.background=col;
     console.log('+id1=',id1,' colo=',colo)
-}
+    } 
+    else {}
+  }
 else 
-if (isBlock==1) {}
-  else if (colo==col) {
+if (isBlock==1||(document.getElementById(idDiv).style.background!=""&&document.getElementById(idDiv).style.background!="white")) {}
+  else if (id1!=idDiv)
+    if (colo==col) {
     document.getElementById(idDiv).style.background=col;
-    console.log('2222222222222')
-    id1=0;
+    id1=0; console.log('id1=',id1);
     countFound++;
     if (countFound==8) {
                 //--остановить таймер
                 clearTimeout(clocktimer);
                 //--вызов модального окна с результами
+                document.getElementById("start").style.display="none";
                 $('#results').modal('show');
                 document.getElementsByClassName("modal-body")[0].innerHTML+=document.getElementById("input1").value;
 
